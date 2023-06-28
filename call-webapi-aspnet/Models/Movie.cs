@@ -13,6 +13,10 @@ namespace call_webapi_aspnet.Models
         public string? Genre { get; set; }
         public decimal Price { get; set; }
         public string? ProductionComp { get; set; }
+        public string? Rating { get; set; }
+        public string? Image { get; set; }
+
+
     }
 }
 

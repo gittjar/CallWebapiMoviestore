@@ -14,7 +14,7 @@ public class HomeController : Controller
             List<Movie> movieList = new List<Movie>();
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("https://movierajapinta.azurewebsites.net/api/Movies"))
+                using (var response = await httpClient.GetAsync("https://movieapi2023.azurewebsites.net/api/Movies"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     movieList = JsonConvert.DeserializeObject<List<Movie>>(apiResponse);
